@@ -1,0 +1,26 @@
+git config --global user.name 'hkduan2004'
+
+git config --global user.email 'hkduan@163.com'
+
+git status           //查看状态
+
+git add .           //添加文件夹  到暂存区
+git add 'git-admin.txt'   //添加文件 到暂存区
+
+
+
+git commit          //添加到仓库内
+git commit -m 'change index.html new file index.js'
+git commit -m 'add git-admin2.txt'
+
+
+git log              //查看代码仓库各个版本
+git reflog         各个版本操作的步骤,版本回退，可以用最前面的数字串（6f44772）
+
+git commit -a -m
+
+
+
+************************************
+git提交代码的时候报了“fatal: Unable to create ‘project_path/.git/index.lock’: File exists”这个错误
+执行rm -f .git/index.lock （或者rm -f git/index.lock） 删除后可提交成功。
